@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Toso e Liz</title>
+    <script src="/aframe.min.js"></script>
+</head>
+<body>
+	<a-scene>
+		<a-assets>
+			<audio id="namur" src="/namur.mp4" preload="auto"></audio>
+			<audio id="mitaro" src="/mitaro.mp4" preload="auto"></audio>
+		</a-assets>
+		<a-entity position="0 0 0">
+			<a-sound src="#namur" autoplay="true" loop="true" position="1 0 0.5"></a-sound>
+		</a-entity>
+		<a-entity position="0 0 0">
+			<a-sound src="#mitaro" autoplay="true" loop="true" position="-1 0 0.5"></a-sound>
+		</a-entity>
+	</a-scene>
+</body>
+</html>
