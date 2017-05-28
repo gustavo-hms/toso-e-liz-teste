@@ -8,15 +8,17 @@
 <body>
 	<a-scene>
 		<a-assets>
-			<audio id="namur" src="/namur.mp4" preload="auto"></audio>
-			<audio id="mitaro" src="/mitaro.mp4" preload="auto"></audio>
+			<audio id="namur" src="/namur.m4a" preload="auto"></audio>
+			<audio id="mitaro" src="/mitaro.m4a" preload="auto"></audio>
+			<video id="toso-e-liz" loop="false" src="toso-e-liz.mp4">
 		</a-assets>
 		<a-entity position="0 0 0">
-			<a-sound src="#namur" autoplay="true" loop="true" position="1 0 0.5"></a-sound>
+			<a-sound src="#namur" autoplay="true" position="2 0 1"></a-sound>
 		</a-entity>
 		<a-entity position="0 0 0">
-			<a-sound src="#mitaro" autoplay="true" loop="true" position="-1 0 0.5"></a-sound>
+			<a-sound src="#mitaro" autoplay="true" position="-2 0 1"></a-sound>
 		</a-entity>
+		<a-videosphere src="#toso-e-liz"></a-videosphere>
 	</a-scene>
 </body>
 </html>
